@@ -9,8 +9,6 @@
 </head>
 <?php require "blocks/header.php"?>
 
-
-
   <main class="container mt-5">
     <h3>Наши статьи</h3>
     <div class="d-flex flex-wrap">
