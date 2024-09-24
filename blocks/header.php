@@ -4,10 +4,16 @@
         <span class="fs-4">Gr1175</span>
     </a>
     <nav>
-    <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Главная</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
-    </ul>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Главная</a></li>
+            <li class="nav-item"><a href="/about.php" class="nav-link">Контакты</a></li>
+        </ul>
     </nav>
-    <a class="btn btn-outline-primary" href="#">Войти</a>
+    <?php 
+    if (isset($_COOKIE['user']) && $_COOKIE['user'] == 'true'): 
+    ?>
+        <a class="btn btn-outline-primary" href="/auth.php">Кабинет пользователя</a>
+    <?php else: ?>
+        <a class="btn btn-outline-primary" href="/auth.php">Войти</a>
+    <?php endif; ?>
 </header>
