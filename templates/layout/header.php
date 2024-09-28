@@ -23,6 +23,6 @@
         <?php if (isset($_COOKIE['user']) && $_COOKIE['user'] == 'true'): ?>
             <a class="btn btn-outline-primary" href="/auth">Кабинет пользователя</a>
         <?php else: ?>
-            <a class="btn btn-outline-primary" href="/auth">Войти</a>
+            <a class="btn btn-outline-primary" href="/login">Войти</a>
         <?php endif; ?>
     </header>
